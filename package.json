@@ -1,6 +1,6 @@
 {
   "name": "medusa-plugin-auth",
-  "version": "1.2.3",
+  "version": "0.0.1",
   "description": "Social authentication plugin for medusajs",
   "keywords": [
     "social",
@@ -25,9 +25,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adrien2p/medusa-plugins.git"
+    "url": "git+https://github.com/"
   },
-  "author": "Adrien de Peretti <adrien.deperetti@gmail.com",
+  "author": "x <x@gmail.com",
   "files": [
     "api",
     "utils",

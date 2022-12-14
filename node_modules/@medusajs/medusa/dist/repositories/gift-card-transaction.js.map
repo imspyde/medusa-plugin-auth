@@ -1,0 +1,1 @@
+{"version":3,"file":"gift-card-transaction.js","sourceRoot":"","sources":["../../src/repositories/gift-card-transaction.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;AAAA,mCAAsD;AACtD,yEAAqE;AAIrE;IAAmD,iDAA+B;IADlF,mCAAmC;IACnC;;IAAoF,CAAC;IAAxE,6BAA6B;QAFzC,IAAA,0BAAgB,EAAC,2CAAmB,CAAC;QACtC,mCAAmC;OACtB,6BAA6B,CAA2C;IAAD,oCAAC;CAAA,AAArF,CAAmD,oBAAU,GAAwB;AAAxE,sEAA6B"}

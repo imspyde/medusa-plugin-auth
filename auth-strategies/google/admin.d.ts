@@ -1,0 +1,22 @@
+import { ConfigModule, MedusaContainer } from '@medusajs/medusa/dist/types/global';
+import { Router } from 'express';
+import { GoogleAuthOptions, Profile } from './types';
+declare const GoogleAdminStrategy_base: new (...args: any[]) => any;
+export declare class GoogleAdminStrategy extends GoogleAdminStrategy_base {
+    protected readonly container: MedusaContainer;
+    protected readonly configModule: ConfigModule;
+    protected readonly strategyOptions: GoogleAuthOptions;
+    constructor(container: MedusaContainer, configModule: ConfigModule, strategyOptions: GoogleAuthOptions);
+    validate(req: Request, accessToken: string, refreshToken: string, profile: Profile): Promise<null | {
+        id: string;
+    }>;
+    private defaultValidate;
+}
+/**
+ * Return the router that hold the google admin authentication routes
+ * @param google
+ * @param configModule
+ */
+export declare function getGoogleAdminAuthRouter(google: GoogleAuthOptions, configModule: ConfigModule): Router;
+export {};
+//# sourceMappingURL=admin.d.ts.map

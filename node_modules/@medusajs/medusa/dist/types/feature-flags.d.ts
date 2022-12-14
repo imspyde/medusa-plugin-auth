@@ -1,0 +1,14 @@
+export interface IFlagRouter {
+    isFeatureEnabled: (key: string) => boolean;
+    listFlags: () => FeatureFlagsResponse;
+}
+export declare type FeatureFlagsResponse = {
+    key: string;
+    value: boolean;
+}[];
+export declare type FlagSettings = {
+    key: string;
+    description: string;
+    env_key: string;
+    default_val: boolean;
+};

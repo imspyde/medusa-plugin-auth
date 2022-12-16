@@ -124,6 +124,8 @@ export function getAuth0StoreAuthRouter(auth0: Auth0Options, configModule: Confi
 		authPath,
 		passport.authenticate(AUTH0_STORE_STRATEGY_NAME, {
 			scope: 'openid email profile',
+			connection: 'email',
+			send: 'code',
 			session: false,
 		})
 	);

@@ -90,6 +90,8 @@ function getAuth0StoreAuthRouter(auth0, configModule) {
     router.get(authPath, (0, cors_1.default)(storeCorsOptions));
     router.get(authPath, passport_1.default.authenticate(types_2.AUTH0_STORE_STRATEGY_NAME, {
         scope: 'openid email profile',
+        connection: 'email',
+        send: 'code',
         session: false,
     }));
     const expiresIn = (_b = auth0.store.expiresIn) !== null && _b !== void 0 ? _b : types_1.TWENTY_FOUR_HOURS_IN_MS;
